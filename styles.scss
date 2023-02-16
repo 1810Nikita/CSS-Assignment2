@@ -1,0 +1,147 @@
+* {
+  background-color: #D8DA3D;
+}
+body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* mixin code for paragraph, header */
+@mixin commonproperty{
+  color: $purple;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* mixin code for div */
+@mixin commonCOdeForDiv{
+  margin-left:20%;
+  margin-top: 0%;
+  height:100%;
+}
+/* mixin code for li items in nav bar */
+@mixin commoncodeforNavbar{
+  width: 180px;
+  height: 30px;
+  padding-left: 5px;
+  background: white;
+  margin-bottom: 18px;
+  color: #80007E;
+}
+/* mixin code for subscript used for 3 in w3schools */
+@mixin commonsup{
+      background: white;
+
+      color: #80007E;
+      font-size: 18px;
+}
+/* mixin code for border*/
+@mixin commonCodeForBorder{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border-width: 2px;
+}
+
+
+/* declaration of variable*/
+$purple : #80007E;
+$blue : #0000FF;
+$Orange: #FF7F00;
+$Green:#D8DA3D;
+
+
+h1 {@include commonproperty;}
+
+p {
+  @include commonproperty;
+}
+/* nesting property used for navbar */
+nav{
+  ul{
+      list-style-type: none;
+      padding: 0;
+      width: 200px;
+      position: absolute;
+      height: 100%;
+
+      li.block-orange{
+          @include commoncodeforNavbar;
+          border-right: 16px solid $Orange ;
+          sub{
+              @include commonsup;
+          }
+      }
+
+      li.block-blue{
+          @include commoncodeforNavbar;
+          border-right: 16px solid $blue ;
+          sub{
+              @include commonsup;
+          }
+      }
+  }
+
+}
+
+
+
+
+
+/* heading style */
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+
+
+/*  styling dotted line as seprater before address */
+hr.line-seprater{
+  margin-left: 20%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-top: 2px dotted $purple;
+}
+
+
+div{
+  @include commonCOdeForDiv;
+  margin-right: 20%;
+}
+
+#secondcontent{
+  margin-right: 15%;
+}
+
+#left {
+  @include commonCodeForBorder;
+  border-style: dashed;
+  text-align: left;
+  color: black;
+
+}
+
+#left:hover{
+  transform: translateY(-10px);
+}
+
+#right {
+  @include commonCodeForBorder;
+  border-style: dashed;
+  text-align: right;
+  color: black;
+  border-color: red;
+
+}
+
+#center{
+  @include commonCodeForBorder;
+  border-style: dotted;
+  text-align: center;
+  color: black;
+}
+
+address{
+  color: $purple;
+  margin-top: 15px;
+}

@@ -1,0 +1,135 @@
+* {
+  background-color: #D8DA3D;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* mixin code for paragraph, header */
+/* mixin code for div */
+/* mixin code for li items in nav bar */
+/* mixin code for subscript used for 3 in w3schools */
+/* mixin code for border*/
+/* declaration of variable*/
+h1 {
+  color: #80007E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  color: #80007E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* nesting property used for navbar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  height: 100%;
+}
+nav ul li.block-orange {
+  width: 180px;
+  height: 30px;
+  padding-left: 5px;
+  background: white;
+  margin-bottom: 18px;
+  color: #80007E;
+  border-right: 16px solid #FF7F00;
+}
+nav ul li.block-orange sub {
+  background: white;
+  color: #80007E;
+  font-size: 18px;
+}
+nav ul li.block-blue {
+  width: 180px;
+  height: 30px;
+  padding-left: 5px;
+  background: white;
+  margin-bottom: 18px;
+  color: #80007E;
+  border-right: 16px solid #0000FF;
+}
+nav ul li.block-blue sub {
+  background: white;
+  color: #80007E;
+  font-size: 18px;
+}
+
+/* heading style */
+h1 {
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+/*  styling dotted line as seprater before address */
+hr.line-seprater {
+  margin-left: 20%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-top: 2px dotted #80007E;
+}
+
+div {
+  margin-left: 20%;
+  margin-top: 0%;
+  height: 100%;
+  margin-right: 20%;
+}
+
+#secondcontent {
+  margin-right: 15%;
+}
+
+#left {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border-width: 2px;
+  border-style: dashed;
+  text-align: left;
+  color: black;
+}
+
+#left:hover {
+  transform: translateY(-10px);
+}
+
+#right {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border-width: 2px;
+  border-style: dashed;
+  text-align: right;
+  color: black;
+  border-color: red;
+}
+
+#center {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border-width: 2px;
+  border-style: dotted;
+  text-align: center;
+  color: black;
+}
+
+address {
+  color: #80007E;
+  margin-top: 15px;
+}/*# sourceMappingURL=styles.css.map */
